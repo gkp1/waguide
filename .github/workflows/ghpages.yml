@@ -23,7 +23,7 @@ jobs:
         run: |
           git checkout build
           rm -rf *
-          cp -r build/. .
+          cp -r ../build .
           git add .
           git commit -m "Update build"
           git push origin build
